@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #202b3c;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.app-container {
+  max-width: 900px;
+}
+
+.app-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #64748b;
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.summary-card,
+.toolbar-card {
+  border: 1px solid #e8edf4;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(20, 35, 60, 0.03);
+}
+
+.summary-label {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.summary-card h3 {
+  font-weight: 800;
+  margin: 0;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.task-card {
+  border: none;
+  border-radius: 14px;
+  background: white;
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-name {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.empty-state {
+  padding: 45px 20px;
+  background: white;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  color: #64748b;
+}
+
+.empty-state h5 {
+  color: #334155;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .app-title {
+    font-size: 29px;
+  }
+
+  .app-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
